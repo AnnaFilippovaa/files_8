@@ -47,7 +47,8 @@ public class CheckFilesTest {
                     CSVReader reader = new CSVReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8));
                     List<String[]> content = reader.readAll();
                     org.assertj.core.api.Assertions.assertThat(content).contains(
-                            new String[]{"check", "array"}
+                            new String[]{"check", "array"},
+                            new String[]{"hello", "world!"}
                     );
                 }
             }
